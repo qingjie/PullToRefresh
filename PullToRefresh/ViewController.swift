@@ -41,7 +41,10 @@ class ViewController: UIViewController , UITableViewDataSource {
     }
     
     func didRefreshList(){
-        self.tableData = bigItemAnimals
+        
+        //self.tableData =  bigItemAnimals
+        self.tableData = smallItemAnimals + bigItemAnimals
+        
         self.tableViewController.tableView.reloadData()
         self.refreshControl.endRefreshing()
         
